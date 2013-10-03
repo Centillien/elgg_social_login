@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Social Login</name>
+	<author>Gerard Kanters</author>
+	<version>1.1.2</version>
+	<description>Allow your visitors to register and login with social networks and identities providers such as Facebook, Twitter, Foursquare and Google.</description>
+	<category>service</category>
+	<category>bundled</category>
+	<website>http://www.centillien.com/</website>
+	<copyright>(c) HybridAuth open source project 2011</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2011032201</version>
+	</requires>
+	<requires>
+		<type>php_extension</type>
+		<name>curl</name>
+	</requires>
+</plugin_manifest>
