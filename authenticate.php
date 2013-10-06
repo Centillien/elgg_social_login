@@ -10,6 +10,10 @@
 	global $CONFIG; 
 	
 	$assets_base_url  = elgg_get_site_url() . "mod/elgg_social_login/";
+	$forward = elgg_get_plugin_setting("ha_settings_forward_page","elgg_social_login");
+	if(empty($forward)) { 
+	$forward = "/";
+	}
 
 	// let display a loading message. should be better than a white screen
 	if( isset( $_GET["provider"] ) && ! isset( $_GET["redirect_to_provider"] )){
@@ -221,7 +225,8 @@
 <head>
 <script>
 function init() {
-	window.opener.location.reload(); 
+
+	window.opener.location ='<?php echo $forward;?>';
 
 	window.close();
 }

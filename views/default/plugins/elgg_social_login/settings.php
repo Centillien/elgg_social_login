@@ -74,11 +74,29 @@ if
 				<input type="text" style="width: 350px;margin: 3px;" 
 					value="<?php echo $vars['entity']->ha_settings_privacy_page; ?>"
 					name="params[ha_settings_privacy_page]" 
-				> leave it black if you dont.
+				> leave it blank if you dont.
 			</td>
 			</tr>
 			</table>
 		</div>
+		                <div style="padding: 5px;margin: 5px;background: none repeat scroll 0 0 #F5F5F5;border-radius:3px;">
+                        <table>
+                        <tr>
+                        <td>
+                                <b>Forward users after login ?</b>
+
+                        </td>
+                        <td>
+                                <input type="text" style="width: 350px;margin: 3px;"
+                                        value="<?php echo $vars['entity']->ha_settings_forward_page; ?>"
+                                        name="params[ha_settings_forward_page]"
+                                > No value = homepage
+                        </td>
+                        </tr>
+                        </table>
+                </div>
+
+
  
 	<br />
 	<h2 style="border-bottom: 1px solid #CCCCCC;margin:10px;">Providers setup</h2>
