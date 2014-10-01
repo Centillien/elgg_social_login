@@ -7,8 +7,6 @@
 	//restore_error_handler();
 	//restore_exception_handler();
 
-	global $CONFIG; 
-	
 	$assets_base_url  = elgg_get_site_url() . "mod/elgg_social_login/";
 	$forward = elgg_get_plugin_setting("ha_settings_forward_page","elgg_social_login");
 	if(empty($forward)) { 
