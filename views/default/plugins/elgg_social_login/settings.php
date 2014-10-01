@@ -1,11 +1,12 @@
 <?php
 global $CONFIG;
 
-require "{$CONFIG->pluginspath}elgg_social_login/settings.php";
+require_once( elgg_get_plugins_path() . "elgg_social_login/settings.php");
 
-$plugin_base_url     = "{$CONFIG->url}mod/elgg_social_login/";
-$hybridauth_base_url = "{$CONFIG->url}mod/elgg_social_login/vendors/hybridauth/";
-$assets_base_url     = "{$vars['url']}mod/elgg_social_login/graphics/";
+$plugin_base_url     =  elgg_get_site_url() . "mod/elgg_social_login/";
+$hybridauth_base_url = elgg_get_site_url() . "mod/elgg_social_login/vendors/hybridauth/";
+$assets_base_url     = elgg_get_site_url() . "mod/elgg_social_login/graphics/";
+
 
 echo '<div id="elgg_social_login_site_settings">';
 
