@@ -1,6 +1,8 @@
 <?php
 	global $CONFIG;
 	global $HA_SOCIAL_LOGIN_PROVIDERS_CONFIG;
+	$site_name =  elgg_get_site_entity()->name;
+
 
 	require_once(dirname(dirname(dirname(dirname(__FILE__)))) . "/settings.php");
 
@@ -20,9 +22,8 @@
 
 		if( elgg_get_plugin_setting( 'ha_settings_' . $provider_id . '_enabled', 'elgg_social_login' ) ){
 			?>
-			<a href="javascript:void(0);" title="Login to Centillien with <?php echo $provider_name ?>" class="ha_connect_with_provider" provider="<?php echo $provider_id ?>">
-				<img alt="<?php echo $provider_name ?>" title="<?php echo "Login to Centillien using your ". $provider_name." account. It is free, we will not publish any content automatically and ". $provider_name ." is not disclosing your password"?>" src="<?php echo $assets_base_url . "graphics/32x32/" . strtolower( $provider_id ) . '.png' ?>" />
-			</a>
+			<a href="javascript:void(0);" title="Login to <?php echo $site_name ?> with <?php echo $provider_name ?>" class="ha_connect_with_provider" provider="<?php echo $provider_id ?>">
+                                <img alt="<?php echo $provider_name ?>" title="<?php echo "Login to ". $site_name ." using your ". $provider_name." account."?>" src="<?php echo $assets_base_url . "graphics/32x32/" . strtolower( $provider_id ) . '.png' ?>" />
 			<?php
 		} 
 	} 
