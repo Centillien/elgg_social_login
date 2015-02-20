@@ -37,7 +37,6 @@
 	// link attribution && privacy page 
 	?>
 	<p style="border-top:2px dotted #999;font-size: 12px;">
-	<a href="http://www.centillien.com/register" title="Register a company on Centillien" >Improve your business network</a><br/> <br/>
 	</p>
 	<?php   
 	echo "</div>";
