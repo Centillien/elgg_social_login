@@ -6,8 +6,7 @@
 	<description>Allow your visitors to register and login with social networks and identities providers such as Facebook, Twitter, Foursquare and Google.</description>
 	<category>service</category>
 	<category>bundled</category>
-	<website>http://www.centillien.com/</website>
-	<copyright>(c) HybridAuth open source project 2011</copyright>
+	<website>https://www.centillien.com/</website>
 	<license>GNU Public License version 2</license>
 	<requires>
 		<type>elgg_version</type>
