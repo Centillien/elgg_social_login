@@ -9,8 +9,8 @@
 	<website>https://www.centillien.com/</website>
 	<license>GNU Public License version 2</license>
 	<requires>
-		<type>elgg_version</type>
-		<version>2011032201</version>
+		<type>elgg_release</type>
+		<version>1.8</version>
 	</requires>
 	<requires>
 		<type>php_extension</type>
