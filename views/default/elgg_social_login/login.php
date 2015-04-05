@@ -23,7 +23,7 @@
 		if( elgg_get_plugin_setting( 'ha_settings_' . $provider_id . '_enabled', 'elgg_social_login' ) ){
 			?>
 			<a href="javascript:void(0);" title="Login to <?php echo $site_name ?> with <?php echo $provider_name ?>" class="ha_connect_with_provider" provider="<?php echo $provider_id ?>">
-                                <img alt="<?php echo $provider_name ?>" title="<?php echo "Login to ". $site_name ." using your ". $provider_name." account."?>" src="<?php echo $assets_base_url . "graphics/32x32/" . strtolower( $provider_id ) . '.png' ?>" />
+                        <img alt="<?php echo $provider_name ?>" title="<?php echo "Login to ". $site_name ." using your ". $provider_name." account."?>" src="<?php echo $assets_base_url . "graphics/32x32/" . strtolower( $provider_id ) . '.png' ?>" /></a>
 			<?php
 		} 
 	} 
